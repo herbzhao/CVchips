@@ -35,7 +35,9 @@ def colour_code_recognition(input_colour_code):
         thermal_coefficient = temperature_coefficient_colour_code[input_colour_code[5]]
     return (total_resistance, resistor_tolerance, temperature_coefficient)
 
-resistor_info = colour_code_recognition(('brown', 'black', 'green', 'gold'))
-print(resistor_info[0])
-print('tolerance: ±{}%'.format(resistor_info[1]))
-print('thermal coefficient: {}'.format(resistor_info[2]))
+
+def resistor_output(colour_output):
+    resistor_info = colour_code_recognition((colour_output))
+    print(resistor_info[0])
+    print('tolerance: ±{}%'.format(resistor_info[1]))
+    print('thermal coefficient: {}'.format(resistor_info[2]))
