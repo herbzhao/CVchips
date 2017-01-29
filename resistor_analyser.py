@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 
 def resistor_analyse():
-    img = cv2.imread(r'C:\Users\herbz\OneDrive - University Of Cambridge\Documents\GitHub\cvchips\CVchips\resources\resistor.png')
+    img = cv2.imread(r'resources\resistor.png')
     #img = cv2.imread("resistor2.jpg")
     #img = cv2.imread("resistor-sample.jpg")
 

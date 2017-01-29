@@ -8,8 +8,8 @@ colour_output = resistor_analyse()
 resistor_output(colour_output)
 
 
-input_image_location = r'C:\Users\herbz\OneDrive - University Of Cambridge\Documents\GitHub\cvchips\CVchips\resources\DS18B20.jpg'
-processed_image_location = r'C:\Users\herbz\OneDrive - University Of Cambridge\Documents\GitHub\cvchips\CVchips\resources\processed_image.png'
+input_image_location = r'resources\DS18B20.jpg'
+processed_image_location = r'resources\processed_image.png'
 processed_image = image_process(input_image_location, processed_image_location)
 
 part_number = upload_ocr(processed_image_location)
